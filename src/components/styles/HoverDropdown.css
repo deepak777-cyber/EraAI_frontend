@@ -1,0 +1,51 @@
+.hover-dropdown {
+padding-top: 20px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.hover-text {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid #7E57C2; 
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hover-text:hover {
+    background-color: #7E57C2; 
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-y: auto; /* Only add scrollbar if necessary */
+    max-height: 200px; /* Adjust max height to control dropdown size */
+    border-radius: 8px;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}

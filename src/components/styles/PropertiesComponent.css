@@ -1,0 +1,118 @@
+.variable-properties {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.variable-properties h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.tabulation-syntax-display {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.tabulation-syntax-display pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1em;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.properties-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkbox-properties, .text-properties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.property-item label {
+    font-size: 1em;
+    color: #333;
+    min-width: 150px;
+}
+
+.property-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.property-item input[type="text"] {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

@@ -1,0 +1,57 @@
+/* src/components/styles/ProjectDetails.css */
+.project-details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.project-details h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.detail-title {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.detail-value {
+    color: #333;
+}
+.project-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-link {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,66 @@
+/* DashboardView.css */
+.dashboard-view {
+    display: flex;
+    height: 100%;
+  }
+  
+  .filter-panel {
+    width: 20%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+  }
+  
+  .filter-dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .filter-container select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .filter-container select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .kpi-panel {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .kpi-placeholder {
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .kpi-placeholder h2 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .kpi-placeholder p {
+    color: #666;
+  }
+  

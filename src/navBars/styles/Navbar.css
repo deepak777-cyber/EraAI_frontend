@@ -1,0 +1,131 @@
+/* Navbar container */
+.navbar {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo styles */
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+/* Individual nav item */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-item .icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    /* Placeholder for the icon, you can use SVG, FontAwesome, or any icon library */
+    /*background-image: url('path-to-your-icon.svg');  Replace with actual icon path */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-item span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Active link styles */
+.nav-item.active,
+.nav-item:hover {
+    color: #28a745;
+}
+
+.nav-item.active .icon,
+.nav-item:hover .icon {
+    background-color: #28a745; /* Change this if you want a different hover effect */
+}
+.logout-container {
+    margin-left: auto;
+}
+
+.logout-button {
+    background-color: #ff5a5f; /* Red button color */
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff3b3f; /* Darker red on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.logout-button:active {
+    transform: translateY(1px); /* Slight downward movement when clicked */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:focus {
+    outline: none; /* Remove focus outline */
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .nav-item {
+        padding: 10px 10px;
+    }
+
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item span {
+        font-size: 12px;
+    }
+
+    .nav-item .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+    }
+}

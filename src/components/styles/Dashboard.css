@@ -1,0 +1,121 @@
+.variable-selection {
+    margin-bottom: 20px;
+  }
+  
+  .variable-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .variable-table th, .variable-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .variable-table th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .filter-kpi-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .filter-list, .kpi-list {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Dashboard.css */
+.view-dashboard-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .view-dashboard-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .dashboard-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dashboard-content {
+    background-color: white;
+    padding: 20px;
+    width: 80vw;
+    height: 80vh;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close-dashboard-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* DashboardView.css */
+  .dashboard-view {
+    display: flex;
+    height: 100%;
+  }
+  
+  .filter-panel {
+    width: 20%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+  }
+  
+  .kpi-panel {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .kpi-placeholder {
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 50px;
+  }

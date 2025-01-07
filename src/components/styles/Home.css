@@ -1,0 +1,170 @@
+/* src/components/styles/Home.css */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 80px);
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-button {
+    background-color: transparent;
+    color: #2c3e50;
+    border: 2px solid purple;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.create-project-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.create-project-btn:hover {
+    background-color: #1f618d;
+}
+
+.project-form {
+    margin-top: 20px;
+}
+
+.project-form .form-group {
+    margin-bottom: 15px;
+}
+
+.project-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.project-form .form-group select,
+.project-form .form-group input[type="text"],
+.project-form .form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #229954;
+}
+/* src/components/styles/Home.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height to ensure it's vertically centered */
+    width: 100%; /* Full width to ensure it's horizontally centered */
+    position: absolute; /* Overlay the entire content */
+    top: 0;
+    left: 0;
+}
+
+.loading-container p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #123abc;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .project-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar h2 {
+        font-size: 20px;
+    }
+
+    .project-button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .create-project-btn {
+        padding: 8px 12px;
+    }
+
+    .submit-btn {
+        padding: 8px 10px;
+    }
+}

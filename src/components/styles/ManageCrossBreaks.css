@@ -1,0 +1,83 @@
+.manage-cross-breaks {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.workspace {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.tabs button:last-child {
+  margin-right: 0;
+}
+
+.selected-banner input[type="text"],
+.selected-banner table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.selected-banner table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.selected-banner th,
+.selected-banner td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.selected-banner th {
+  background-color: #f0f0f0;
+}
+
+.selected-banner td {
+  position: relative;
+}
+
+.selected-banner button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.sig-letters {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .tabs button {
+      flex: 1 1 100%;
+      text-align: center;
+  }
+}

@@ -1,0 +1,84 @@
+.dropdownContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.toggle-switch input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.toggle-label {
+    cursor: pointer;
+    width: 50px;
+    height: 24px;
+    background: #ddd;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .toggle-label {
+    background: #7E57C2; /* Color when the toggle is active */
+}
+
+input:checked + .toggle-label:before {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+}
+
+.toggle-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.three-way-toggle {
+    display: flex;
+    margin-left: 20px;
+}
+
+.three-way-toggle .toggle-btn {
+    padding: 8px 16px;
+    border: 1px solid #7E57C2;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.three-way-toggle .toggle-btn.active {
+    background-color: #7E57C2;
+    color: #fff;
+}
+
+.three-way-toggle .toggle-btn:hover {
+    background-color: #7E57C2;
+    color: #fff;
+}
